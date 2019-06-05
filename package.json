@@ -1,0 +1,16 @@
+{
+  "name": "joinus",
+  "version": "1.0.0",
+  "description": "Practice with node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Join",
+    "Us",
+    "Joined"
+  ],
+  "author": "Brayan Bernal",
+  "license": "ISC"
+}

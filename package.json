@@ -4,7 +4,8 @@
   "description": "Practice with node.js",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "keywords": [
     "Join",
@@ -12,5 +13,13 @@
     "Joined"
   ],
   "author": "Brayan Bernal",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "faker": "^4.1.0"
+  },
+  "devDependencies": {
+    "mysql": "^2.17.1",
+    "nodemon": "^1.19.1"
+  }
 }

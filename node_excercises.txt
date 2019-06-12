@@ -1,0 +1,54 @@
+// let query = 'SELECT * FROM users';
+
+// connection.query(query, (err,res,fields)=>{
+//     if (err) throw err;
+//     for (let i in res) {
+//         console.log(res[i].email);
+//         console.log(res[i].created_at);
+//     }
+// });
+
+// query = 'SELECT COUNT(*) AS total FROM users';
+
+// connection.query(query, (err,res,fields)=>{
+//     if (err) throw err;
+//     console.log(res[0].total);
+// });
+
+// query = `INSERT INTO users (email) VALUES ('${faker.internet.email()}')`;
+
+// connection.query(query, (err,res,fields)=>{
+//     if (err) throw err;
+//     console.log(res);
+// });
+
+// let person = {
+//     email: faker.internet.email(),
+//     created_at: faker.date.past()
+// };
+
+// let end_result = connection.query('INSERT INTO users SET ?', person, (err,res,fields)=>{
+//     if (err) throw err;
+//     console.log(res);
+// });
+
+// console.log(end_result.sql);
+
+//INSERTING LOTS OF DATA
+// let data = [];
+
+// for (let i = 0; i < 500; i++) {
+//     data.push([
+//         faker.internet.email(),
+//         faker.date.past()
+//     ]);    
+// }
+
+// let query = 'INSERT INTO users (email, created_at) VALUES ?';
+
+// let sql = connection.query(query, [data], (err, res, fields)=>{
+//     console.log(err);
+//     console.log(res);
+// });
+
+// console.log(sql.sql);
